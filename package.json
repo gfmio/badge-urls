@@ -1,7 +1,28 @@
 {
   "name": "badge-urls",
+  "description": "Helper functions to generate URLs for all badges / shields from shields.io",
   "version": "1.0.0",
   "license": "MIT",
+  "author": {
+    "email": "npm@gfm.io",
+    "name": "Frédérique Mittelstaedt",
+    "url": "https://www.gfm.io"
+  },
+  "keywords": [
+    "badge",
+    "shield",
+    "url",
+    "data",
+    "generate"
+  ],
+  "homepage": "https://github.com/gfmio/badge-urls",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gfmio/badge-urls.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gfmio/badge-urls/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",

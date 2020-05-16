@@ -1,6 +1,6 @@
 # badge-urls
 
-This package provides function to construct URLs for all badges / shields from <shields.io>.
+This package provides functions to generate URLs for all badges / shields from <shields.io>.
 
 ## Why
 
