@@ -1,0 +1,32 @@
+// This file was auto-generated. Do not modify it by hand and instead modify the scraper or code generator files.
+
+export * as bitbucketOpenIssues from './bitbucketOpenIssues';
+export * as bitbucketOpenIssues2 from './bitbucketOpenIssues2';
+export * as bitbucketOpenPullRequests from './bitbucketOpenPullRequests';
+export * as bitbucketServerOpenPullRequests from './bitbucketServerOpenPullRequests';
+export * as bitbucketOpenPullRequests2 from './bitbucketOpenPullRequests2';
+export * as bitbucketServerOpenPullRequests2 from './bitbucketServerOpenPullRequests2';
+export * as bugzillaBugStatusMozilla from './bugzillaBugStatusMozilla';
+export * as bugzillaBugStatusNonMozilla from './bugzillaBugStatusNonMozilla';
+export * as gerritChangeStatus from './gerritChangeStatus';
+export * as githubCommitMergeStatus from './githubCommitMergeStatus';
+export * as githubHacktoberfestCombinedStatus from './githubHacktoberfestCombinedStatus';
+export * as githubHacktoberfestCombinedStatusSuggestionLabelOverride from './githubHacktoberfestCombinedStatusSuggestionLabelOverride';
+export * as githubIssuePullRequestDetail from './githubIssuePullRequestDetail';
+export * as githubIssues from './githubIssues';
+export * as githubIssues2 from './githubIssues2';
+export * as githubIssuesByLabel from './githubIssuesByLabel';
+export * as githubIssuesByLabel2 from './githubIssuesByLabel2';
+export * as githubClosedIssues from './githubClosedIssues';
+export * as githubClosedIssues2 from './githubClosedIssues2';
+export * as githubPullRequests from './githubPullRequests';
+export * as githubPullRequests2 from './githubPullRequests2';
+export * as githubClosedPullRequests from './githubClosedPullRequests';
+export * as githubClosedPullRequests2 from './githubClosedPullRequests2';
+export * as githubPullRequestsByLabel from './githubPullRequestsByLabel';
+export * as githubPullRequestsByLabel2 from './githubPullRequestsByLabel2';
+export * as githubLabels from './githubLabels';
+export * as githubMilestone from './githubMilestone';
+export * as githubMilestones from './githubMilestones';
+export * as jiraIssue from './jiraIssue';
+export * as jiraSprintCompletion from './jiraSprintCompletion';

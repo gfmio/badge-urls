@@ -1,0 +1,37 @@
+// This file was auto-generated. Do not modify it by hand and instead modify the scraper or code generator files.
+
+export * as ansibleQualityScore from './ansibleQualityScore';
+export * as ciiBestPracticesLevel from './ciiBestPracticesLevel';
+export * as ciiBestPracticesTieredPercentage from './ciiBestPracticesTieredPercentage';
+export * as ciiBestPracticesSummary from './ciiBestPracticesSummary';
+export * as cocoapodsDocPercentage from './cocoapodsDocPercentage';
+export * as codacyGrade from './codacyGrade';
+export * as codacyBranchGrade from './codacyBranchGrade';
+export * as codeClimateMaintainability from './codeClimateMaintainability';
+export * as codeClimateIssues from './codeClimateIssues';
+export * as codeClimateTechnicalDebt from './codeClimateTechnicalDebt';
+export * as codefactorGrade from './codefactorGrade';
+export * as coverityScan from './coverityScan';
+export * as dependabotSemverCompatibility from './dependabotSemverCompatibility';
+export * as githubLanguageCount from './githubLanguageCount';
+export * as githubSearchHitCounter from './githubSearchHitCounter';
+export * as githubTopLanguage from './githubTopLanguage';
+export * as lgtmAlerts from './lgtmAlerts';
+export * as lgtmGrade from './lgtmGrade';
+export * as scrutinizerCodeQualityGithubBitbucket from './scrutinizerCodeQualityGithubBitbucket';
+export * as scrutinizerCoverageGitlab from './scrutinizerCoverageGitlab';
+export * as snykVulnerabilitiesForGithubRepo from './snykVulnerabilitiesForGithubRepo';
+export * as snykVulnerabilitiesForGithubRepoSpecificManifest from './snykVulnerabilitiesForGithubRepoSpecificManifest';
+export * as snykVulnerabilitiesForNpmPackage from './snykVulnerabilitiesForNpmPackage';
+export * as snykVulnerabilitiesForNpmPackageVersion from './snykVulnerabilitiesForNpmPackageVersion';
+export * as snykVulnerabilitiesForNpmScopedPackage from './snykVulnerabilitiesForNpmScopedPackage';
+export * as sonarDocumentedApiDensity from './sonarDocumentedApiDensity';
+export * as sonarFortifySecurityRating from './sonarFortifySecurityRating';
+export * as sonarQualityGate from './sonarQualityGate';
+export * as sonarTechDebt from './sonarTechDebt';
+export * as sonarViolationsShortFormat from './sonarViolationsShortFormat';
+export * as sonarViolationsLongFormat from './sonarViolationsLongFormat';
+export * as symfonyinsightGrade from './symfonyinsightGrade';
+export * as symfonyinsightStars from './symfonyinsightStars';
+export * as symfonyinsightViolations from './symfonyinsightViolations';
+export * as w3cValidation from './w3cValidation';

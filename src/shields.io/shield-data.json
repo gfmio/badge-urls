@@ -1,0 +1,2156 @@
+{
+  "build": [
+    {
+      "label": "AppVeyor",
+      "url": "/appveyor/build/:user/:repo"
+    },
+    {
+      "label": "AppVeyor branch",
+      "url": "/appveyor/build/:user/:repo/:branch"
+    },
+    {
+      "label": "AppVeyor Job",
+      "url": "/appveyor/job/build/:user/:repo/:job"
+    },
+    {
+      "label": "AppVeyor Job branch",
+      "url": "/appveyor/job/build/:user/:repo/:job/:branch"
+    },
+    {
+      "label": "AppVeyor tests",
+      "url": "/appveyor/tests/:user/:repo"
+    },
+    {
+      "label": "AppVeyor tests (branch)",
+      "url": "/appveyor/tests/:user/:repo/:branch"
+    },
+    {
+      "label": "AppVeyor tests (compact)",
+      "url": "/appveyor/tests/:user/:repo?compact_message"
+    },
+    {
+      "label": "AppVeyor tests with custom labels",
+      "url": "/appveyor/tests/:user/:repo?failed_label=bad&passed_label=good&skipped_label=n%2Fa"
+    },
+    {
+      "label": "Azure DevOps builds",
+      "url": "/azure-devops/build/:organization/:projectId/:definitionId"
+    },
+    {
+      "label": "Azure DevOps builds (branch)",
+      "url": "/azure-devops/build/:organization/:projectId/:definitionId/:branch"
+    },
+    {
+      "label": "Azure DevOps builds (stage)",
+      "url": "/azure-devops/build/:organization/:projectId/:definitionId/:branch*?stage=Successful%20Stage"
+    },
+    {
+      "label": "Azure DevOps builds (job)",
+      "url": "/azure-devops/build/:organization/:projectId/:definitionId/:branch*?job=Successful%20Job&stage=Successful%20Stage"
+    },
+    {
+      "label": "Azure DevOps releases",
+      "url": "/azure-devops/release/:organization/:projectId/:definitionId/:environmentId"
+    },
+    {
+      "label": "Azure DevOps tests",
+      "url": "/azure-devops/tests/:organization/:project/:definitionId"
+    },
+    {
+      "label": "Azure DevOps tests (branch)",
+      "url": "/azure-devops/tests/:organization/:project/:definitionId/:branch"
+    },
+    {
+      "label": "Azure DevOps tests (compact)",
+      "url": "/azure-devops/tests/:organization/:project/:definitionId?compact_message"
+    },
+    {
+      "label": "Azure DevOps tests with custom labels",
+      "url": "/azure-devops/tests/:organization/:project/:definitionId?failed_label=bad&passed_label=good&skipped_label=n%2Fa"
+    },
+    {
+      "label": "Bitbucket Pipelines",
+      "url": "/bitbucket/pipelines/:user/:repo"
+    },
+    {
+      "label": "Bitbucket Pipelines branch",
+      "url": "/bitbucket/pipelines/:user/:repo/:branch"
+    },
+    {
+      "label": "Bitrise",
+      "url": "/bitrise/:appId/:branch??token=GCIdEzacE4GW32jLVrZb7A"
+    },
+    {
+      "label": "Buildkite",
+      "url": "/buildkite/:identifier"
+    },
+    {
+      "label": "Buildkite (branch)",
+      "url": "/buildkite/:identifier/:branch"
+    },
+    {
+      "label": "CircleCI",
+      "url": "/circleci/build/:vcsType/:user/:repo/:branch*?token=abc123def456"
+    },
+    {
+      "label": "Cirrus CI - Base Branch Build Status",
+      "url": "/cirrus/github/:user/:repo?script=test&task=analyze"
+    },
+    {
+      "label": "Cirrus CI - Specific Branch Build Status",
+      "url": "/cirrus/github/:user/:repo/:branch?script=test&task=analyze"
+    },
+    {
+      "label": "Cirrus CI - Specific Task Build Status",
+      "url": "/cirrus/github/:user/:repo?task=analyze"
+    },
+    {
+      "label": "Cirrus CI - Task and Script Build Status",
+      "url": "/cirrus/github/:user/:repo?script=test&task=analyze"
+    },
+    {
+      "label": "Codeship",
+      "url": "/codeship/:projectId"
+    },
+    {
+      "label": "Codeship (branch)",
+      "url": "/codeship/:projectId/:branch"
+    },
+    {
+      "label": "continuousphp",
+      "url": "/continuousphp/:provider/:user/:repo"
+    },
+    {
+      "label": "continuousphp",
+      "url": "/continuousphp/:provider/:user/:repo/:branch"
+    },
+    {
+      "label": "Docker Automated build",
+      "url": "/docker/automated/:user/:repo"
+    },
+    {
+      "label": "Docker Build Status",
+      "url": "/docker/build/:user/:repo"
+    },
+    {
+      "label": "Docker Cloud Automated build",
+      "url": "/docker/cloud/automated/:user/:repo"
+    },
+    {
+      "label": "Docker Cloud Build Status",
+      "url": "/docker/cloud/build/:user/:repo"
+    },
+    {
+      "label": "Drone (cloud)",
+      "url": "/drone/build/:user/:repo"
+    },
+    {
+      "label": "Drone (cloud) with branch",
+      "url": "/drone/build/:user/:repo/:branch"
+    },
+    {
+      "label": "Drone (self-hosted)",
+      "url": "/drone/build/:user/:repo?server=https%3A%2F%2Fdrone.shields.io"
+    },
+    {
+      "label": "Drone (self-hosted) with branch",
+      "url": "/drone/build/:user/:repo/:branch?server=https%3A%2F%2Fdrone.shields.io"
+    },
+    {
+      "label": "GitHub pull request check state",
+      "url": "/github/status/s/pulls/:user/:repo/:number"
+    },
+    {
+      "label": "GitHub pull request check contexts",
+      "url": "/github/status/contexts/pulls/:user/:repo/:number"
+    },
+    {
+      "label": "GitHub Workflow Status",
+      "url": "/github/workflow/status/:user/:repo/:workflow"
+    },
+    {
+      "label": "GitHub Workflow Status (branch)",
+      "url": "/github/workflow/status/:user/:repo/:workflow/:branch"
+    },
+    {
+      "label": "Gitlab pipeline status",
+      "url": "/gitlab/pipeline/:user/:repo"
+    },
+    {
+      "label": "Gitlab pipeline status (branch)",
+      "url": "/gitlab/pipeline/:user/:repo/:branch"
+    },
+    {
+      "label": "Gitlab pipeline status (self-hosted)",
+      "url": "/gitlab/pipeline/:user/:repo?gitlab_url=https%3A%2F%2Fgitlab.gnome.org"
+    },
+    {
+      "label": "Jenkins",
+      "url": "/jenkins/build?jobUrl=https%3A%2F%2Fwso2.org%2Fjenkins%2Fview%2FAll%2520Builds%2Fjob%2Farchetypes"
+    },
+    {
+      "label": "Jenkins tests",
+      "url": "/jenkins/tests?compact_message&failed_label=failed&jobUrl=https%3A%2F%2Fjenkins.sqlalchemy.org%2Fjob%2Falembic_coverage&passed_label=passed&skipped_label=skipped"
+    },
+    {
+      "label": "Netlify",
+      "url": "/netlify/:projectId"
+    },
+    {
+      "label": "Read the Docs",
+      "url": "/readthedocs/:packageName"
+    },
+    {
+      "label": "Read the Docs (version)",
+      "url": "/readthedocs/:packageName/:version"
+    },
+    {
+      "label": "Scrutinizer build (GitHub/Bitbucket)",
+      "url": "/scrutinizer/build/:vcs/:user/:repo/:branch?"
+    },
+    {
+      "label": "Scrutinizer build (GitLab)",
+      "url": "/scrutinizer/build/gl/:instance/:user/:repo/:branch?"
+    },
+    {
+      "label": "Shippable",
+      "url": "/shippable/:projectId"
+    },
+    {
+      "label": "Shippable branch",
+      "url": "/shippable/:projectId/:branch"
+    },
+    {
+      "label": "Sonar Tests",
+      "url": "/sonar/tests/:component?compact_message&failed_label=failed&passed_label=passed&server=http%3A%2F%2Fsonar.petalslink.com&skipped_label=skipped&sonarVersion=4.2"
+    },
+    {
+      "label": "Sonar Test Count",
+      "url": "/sonar/:metric/:component?server=http%3A%2F%2Fsonar.petalslink.com&sonarVersion=4.2"
+    },
+    {
+      "label": "Sonar Test Execution Time",
+      "url": "/sonar/test_execution_time/:component?server=https%3A%2F%2Fsonarcloud.io&sonarVersion=4.2"
+    },
+    {
+      "label": "Sonar Test Success Rate",
+      "url": "/sonar/test_success_density/:component?server=https%3A%2F%2Fsonarcloud.io&sonarVersion=4.2"
+    },
+    {
+      "label": "TeamCity Simple Build Status",
+      "url": "/teamcity/build/:verbosity/:buildId?server=https%3A%2F%2Fteamcity.jetbrains.com"
+    },
+    {
+      "label": "TeamCity Full Build Status",
+      "url": "/teamcity/build/:verbosity/:buildId?server=https%3A%2F%2Fteamcity.jetbrains.com"
+    },
+    {
+      "label": "Travis (.org)",
+      "url": "/travis/:user/:repo"
+    },
+    {
+      "label": "Travis (.org) branch",
+      "url": "/travis/:user/:repo/:branch"
+    },
+    {
+      "label": "Travis (.com)",
+      "url": "/travis/com/:user/:repo"
+    },
+    {
+      "label": "Travis (.com) branch",
+      "url": "/travis/com/:user/:repo/:branch"
+    },
+    {
+      "label": "Visual Studio App Center Builds",
+      "url": "/visual-studio-app-center/builds/:owner/:app/:branch/:token"
+    },
+    {
+      "label": "Wercker CI Run",
+      "url": "/wercker/ci/:applicationId"
+    },
+    {
+      "label": "Wercker CI Run",
+      "url": "/wercker/ci/:applicationId/:branch"
+    },
+    {
+      "label": "Wercker Build",
+      "url": "/wercker/build/:userName/:applicationName"
+    },
+    {
+      "label": "Wercker Build branch",
+      "url": "/wercker/build/:userName/:applicationName/:branch"
+    }
+  ],
+  "coverage": [
+    {
+      "label": "Azure DevOps coverage",
+      "url": "/azure-devops/coverage/:organization/:project/:definitionId"
+    },
+    {
+      "label": "Azure DevOps coverage (branch)",
+      "url": "/azure-devops/coverage/:organization/:project/:definitionId/:branch"
+    },
+    {
+      "label": "Codacy coverage",
+      "url": "/codacy/coverage/:projectId"
+    },
+    {
+      "label": "Codacy branch coverage",
+      "url": "/codacy/coverage/:projectId/:branch"
+    },
+    {
+      "label": "Code Climate coverage",
+      "url": "/codeclimate/:format/:user/:repo"
+    },
+    {
+      "label": "Codecov",
+      "url": "/codecov/c/:vcsName/:user/:repo?flag=flag_name&token=a1b2c3d4e5"
+    },
+    {
+      "label": "Codecov branch",
+      "url": "/codecov/c/:vcsName/:user/:repo/:branch?flag=flag_name&token=a1b2c3d4e5"
+    },
+    {
+      "label": "Coveralls github",
+      "url": "/coveralls/:vcsType/:user/:repo"
+    },
+    {
+      "label": "Coveralls github branch",
+      "url": "/coveralls/:vcsType/:user/:repo/:branch"
+    },
+    {
+      "label": "Coveralls bitbucket",
+      "url": "/coveralls/:vcsType/:user/:repo"
+    },
+    {
+      "label": "Coveralls bitbucket branch",
+      "url": "/coveralls/:vcsType/:user/:repo/:branch"
+    },
+    {
+      "label": "Jenkins Coverage",
+      "url": "/jenkins/coverage/:format?jobUrl=https%3A%2F%2Fjenkins.sqlalchemy.org%2Fjob%2Falembic_coverage"
+    },
+    {
+      "label": "nycrc config on GitHub",
+      "url": "/nycrc/:user/:repo?config=.nycrc&preferredThreshold=lines"
+    },
+    {
+      "label": "Scrutinizer coverage (GitHub/BitBucket)",
+      "url": "/scrutinizer/coverage/:vcs/:user/:repo/:branch?"
+    },
+    {
+      "label": "Scrutinizer coverage (GitLab)",
+      "url": "/scrutinizer/coverage/gl/:instance/:user/:repo/:branch?"
+    },
+    {
+      "label": "Sonar Coverage",
+      "url": "/sonar/coverage/:component?server=http%3A%2F%2Fsonar.petalslink.com&sonarVersion=4.2"
+    },
+    {
+      "label": "TeamCity Coverage",
+      "url": "/teamcity/coverage/:buildId?server=https%3A%2F%2Fteamcity.jetbrains.com"
+    }
+  ],
+  "analysis": [
+    {
+      "label": "Ansible Quality Score",
+      "url": "/ansible/quality/:projectId"
+    },
+    {
+      "label": "CII Best Practices Level",
+      "url": "/cii/level/:projectId"
+    },
+    {
+      "label": "CII Best Practices Tiered Percentage",
+      "url": "/cii/percentage/:projectId"
+    },
+    {
+      "label": "CII Best Practices Summary",
+      "url": "/cii/summary/:projectId"
+    },
+    {
+      "label": "Cocoapods doc percentage",
+      "url": "/cocoapods/metrics/doc-percent/:spec"
+    },
+    {
+      "label": "Codacy grade",
+      "url": "/codacy/grade/:projectId"
+    },
+    {
+      "label": "Codacy branch grade",
+      "url": "/codacy/grade/:projectId/:branch"
+    },
+    {
+      "label": "Code Climate maintainability",
+      "url": "/codeclimate/:format/:user/:repo"
+    },
+    {
+      "label": "Code Climate issues",
+      "url": "/codeclimate/issues/:user/:repo"
+    },
+    {
+      "label": "Code Climate technical debt",
+      "url": "/codeclimate/tech-debt/:user/:repo"
+    },
+    {
+      "label": "CodeFactor Grade",
+      "url": "/codefactor/grade/:vcsType/:user/:repo/:branch*"
+    },
+    {
+      "label": "Coverity Scan",
+      "url": "/coverity/scan/:projectId"
+    },
+    {
+      "label": "Dependabot SemVer Compatibility",
+      "url": "/dependabot/semver/:packageManager/:dependencyName"
+    },
+    {
+      "label": "GitHub language count",
+      "url": "/github/languages/count/:user/:repo"
+    },
+    {
+      "label": "GitHub search hit counter",
+      "url": "/github/search/:user/:repo/:query"
+    },
+    {
+      "label": "GitHub top language",
+      "url": "/github/languages/top/:user/:repo"
+    },
+    {
+      "label": "LGTM Alerts",
+      "url": "/lgtm/alerts/:host/:user/:repo"
+    },
+    {
+      "label": "LGTM Grade",
+      "url": "/lgtm/grade/:language/:host/:user/:repo"
+    },
+    {
+      "label": "Scrutinizer code quality (GitHub/Bitbucket)",
+      "url": "/scrutinizer/quality/:vcs/:user/:repo/:branch?"
+    },
+    {
+      "label": "Scrutinizer coverage (GitLab)",
+      "url": "/scrutinizer/quality/gl/:instance/:user/:repo/:branch?"
+    },
+    {
+      "label": "Snyk Vulnerabilities for GitHub Repo",
+      "url": "/snyk/vulnerabilities/github/:user/:repo"
+    },
+    {
+      "label": "Snyk Vulnerabilities for GitHub Repo (Specific Manifest)",
+      "url": "/snyk/vulnerabilities/github/:user/:repo/:manifestFilePath"
+    },
+    {
+      "label": "Snyk Vulnerabilities for npm package",
+      "url": "/snyk/vulnerabilities/npm/:packageName"
+    },
+    {
+      "label": "Snyk Vulnerabilities for npm package version",
+      "url": "/snyk/vulnerabilities/npm/:packageName"
+    },
+    {
+      "label": "Snyk Vulnerabilities for npm scoped package",
+      "url": "/snyk/vulnerabilities/npm/:packageName"
+    },
+    {
+      "label": "Sonar Documented API Density",
+      "url": "/sonar/public_documented_api_density/:component?server=http%3A%2F%2Fsonar.petalslink.com&sonarVersion=4.2"
+    },
+    {
+      "label": "Sonar Fortify Security Rating",
+      "url": "/sonar/fortify-security-rating/:component?server=http%3A%2F%2Fsonar.petalslink.com&sonarVersion=4.2"
+    },
+    {
+      "label": "Sonar Quality Gate",
+      "url": "/sonar/:metric/:component?server=https%3A%2F%2Fsonarcloud.io&sonarVersion=4.2"
+    },
+    {
+      "label": "Sonar Tech Debt",
+      "url": "/sonar/:metric/:component?server=http%3A%2F%2Fsonar.petalslink.com&sonarVersion=4.2"
+    },
+    {
+      "label": "Sonar Violations (short format)",
+      "url": "/sonar/:metric/:component?format=short&server=https%3A%2F%2Fsonarcloud.io&sonarVersion=4.2"
+    },
+    {
+      "label": "Sonar Violations (long format)",
+      "url": "/sonar/:metric/:component?format=long&server=http%3A%2F%2Fsonar.petalslink.com"
+    },
+    {
+      "label": "SymfonyInsight Grade",
+      "url": "/symfony/i/grade/:projectUuid"
+    },
+    {
+      "label": "SymfonyInsight Stars",
+      "url": "/symfony/i/stars/:projectUuid"
+    },
+    {
+      "label": "SymfonyInsight Violations",
+      "url": "/symfony/i/violations/:projectUuid"
+    },
+    {
+      "label": "W3C Validation",
+      "url": "/w3c-validation/:parser?preset=HTML%2C%20SVG%201.1%2C%20MathML%203.0&targetUrl=https%3A%2F%2Fvalidator.nu%2F"
+    }
+  ],
+  "chat": [
+    {
+      "label": "Discord",
+      "url": "/discord/:serverId"
+    },
+    {
+      "label": "Discourse topics",
+      "url": "/discourse/topics?server=https%3A%2F%2Fmeta.discourse.org"
+    },
+    {
+      "label": "Discourse users",
+      "url": "/discourse/users?server=https%3A%2F%2Fmeta.discourse.org"
+    },
+    {
+      "label": "Discourse posts",
+      "url": "/discourse/posts?server=https%3A%2F%2Fmeta.discourse.org"
+    },
+    {
+      "label": "Discourse likes",
+      "url": "/discourse/likes?server=https%3A%2F%2Fmeta.discourse.org"
+    },
+    {
+      "label": "Discourse status",
+      "url": "/discourse/status?server=https%3A%2F%2Fmeta.discourse.org"
+    },
+    {
+      "label": "Gitter",
+      "url": "/gitter/room/:user/:repo"
+    },
+    {
+      "label": "Matrix",
+      "url": "/matrix/:roomAlias"
+    },
+    {
+      "label": "Matrix",
+      "url": "/matrix/:roomAlias?server_fqdn=matrix.org"
+    },
+    {
+      "label": "Stack Exchange monthly questions",
+      "url": "/stackexchange/:stackexchangesite/qm/:query"
+    },
+    {
+      "label": "Stack Exchange reputation",
+      "url": "/stackexchange/:stackexchangesite/r/:query"
+    },
+    {
+      "label": "Stack Exchange questions",
+      "url": "/stackexchange/:stackexchangesite/t/:query"
+    }
+  ],
+  "dependencies": [
+    {
+      "label": "David",
+      "url": "/david/:kind?/:user/:repo"
+    },
+    {
+      "label": "David (path)",
+      "url": "/david/:kind?/:user/:repo?path=packages%2Fbabel-core"
+    },
+    {
+      "label": "Depfu",
+      "url": "/depfu/:user/:repo"
+    },
+    {
+      "label": "GitHub Pipenv locked dependency version",
+      "url": "/github/pipenv/locked/dependency-version/:user/:repo/:kind?/:packageName"
+    },
+    {
+      "label": "GitHub Pipenv locked dependency version (branch)",
+      "url": "/github/pipenv/locked/dependency-version/:user/:repo/:kind?/:packageName/:branch"
+    },
+    {
+      "label": "Hackage-Deps",
+      "url": "/hackage-deps/v/:packageName"
+    },
+    {
+      "label": "Libraries.io dependency status for latest release",
+      "url": "/librariesio/release/:platform/:packageName"
+    },
+    {
+      "label": "Libraries.io dependency status for specific release",
+      "url": "/librariesio/release/:platform/:packageName/:version"
+    },
+    {
+      "label": "Libraries.io dependency status for latest release, scoped npm package",
+      "url": "/librariesio/release/:platform/:scope/:packageName"
+    },
+    {
+      "label": "Libraries.io dependency status for specific release, scoped npm package",
+      "url": "/librariesio/release/:platform/:scope/:packageName/:version"
+    },
+    {
+      "label": "Libraries.io dependency status for GitHub repo",
+      "url": "/librariesio/github/:user/:repo"
+    },
+    {
+      "label": "Requires.io",
+      "url": "/requires/:service/:user/:repo"
+    },
+    {
+      "label": "Requires.io (branch)",
+      "url": "/requires/:service/:user/:repo/:branch"
+    }
+  ],
+  "size": [
+    {
+      "label": "npm bundle size",
+      "url": "/bundlephobia/:format/:packageName"
+    },
+    {
+      "label": "npm bundle size (scoped)",
+      "url": "/bundlephobia/:format/:scope/:packageName"
+    },
+    {
+      "label": "npm bundle size (version)",
+      "url": "/bundlephobia/:format/:packageName/:version"
+    },
+    {
+      "label": "npm bundle size (scoped version)",
+      "url": "/bundlephobia/:format/:scope/:packageName/:version"
+    },
+    {
+      "label": "Docker Image Size (latest by date)",
+      "url": "/docker/image-size/:user/:repo?sort=date"
+    },
+    {
+      "label": "Docker Image Size (latest semver)",
+      "url": "/docker/image-size/:user/:repo?sort=semver"
+    },
+    {
+      "label": "Docker Image Size (tag)",
+      "url": "/docker/image-size/:user/:repo/:tag"
+    },
+    {
+      "label": "GitHub code size in bytes",
+      "url": "/github/languages/code-size/:user/:repo"
+    },
+    {
+      "label": "GitHub repo size",
+      "url": "/github/repo-size/:user/:repo"
+    },
+    {
+      "label": "GitHub file size in bytes",
+      "url": "/github/size/:user/:repo/:path*"
+    },
+    {
+      "label": "MicroBadger Layers",
+      "url": "/microbadger/layers/:user/:repo"
+    },
+    {
+      "label": "MicroBadger Layers (tag)",
+      "url": "/microbadger/layers/:user/:repo/:tag"
+    },
+    {
+      "label": "MicroBadger Size",
+      "url": "/microbadger/image-size/:user/:repo"
+    },
+    {
+      "label": "MicroBadger Size (tag)",
+      "url": "/microbadger/image-size/:user/:repo/:tag"
+    },
+    {
+      "label": "Spiget Download Size",
+      "url": "/spiget/download-size/:resourceId"
+    },
+    {
+      "label": "Steam File Size",
+      "url": "/steam/size/:fileId"
+    },
+    {
+      "label": "Visual Studio App Center Size",
+      "url": "/visual-studio-app-center/releases/size/:owner/:app/:token"
+    }
+  ],
+  "downloads": [
+    {
+      "label": "Mozilla Add-on",
+      "url": "/amo/dw/:addonId"
+    },
+    {
+      "label": "Mozilla Add-on",
+      "url": "/amo/users/:addonId"
+    },
+    {
+      "label": "Ansible Role",
+      "url": "/ansible/role/d/:roleId"
+    },
+    {
+      "label": "APM",
+      "url": "/apm/dm/:packageName"
+    },
+    {
+      "label": "Chocolatey",
+      "url": "/chocolatey/dt/:packageName"
+    },
+    {
+      "label": "Chrome Web Store",
+      "url": "/chrome-web-store/users/:storeId"
+    },
+    {
+      "label": "ClojarsDownloads",
+      "url": "/clojars/dt/:clojar+"
+    },
+    {
+      "label": "Conda",
+      "url": "/conda/dn/:channel/:package"
+    },
+    {
+      "label": "Crates.io",
+      "url": "/crates/d/:crate"
+    },
+    {
+      "label": "Crates.io (latest)",
+      "url": "/crates/dv/:crate"
+    },
+    {
+      "label": "Crates.io (version)",
+      "url": "/crates/dv/:crate/:version"
+    },
+    {
+      "label": "Crates.io (recent)",
+      "url": "/crates/dr/:crate"
+    },
+    {
+      "label": "Docker Pulls",
+      "url": "/docker/pulls/:user/:repo"
+    },
+    {
+      "label": "DUB",
+      "url": "/dub/:interval/:packageName/:version*"
+    },
+    {
+      "label": "DUB (version)",
+      "url": "/dub/:interval/:packageName/:version*"
+    },
+    {
+      "label": "DUB (latest)",
+      "url": "/dub/:interval/:packageName/:version*"
+    },
+    {
+      "label": "Eclipse Marketplace",
+      "url": "/eclipse-marketplace/dm/:name"
+    },
+    {
+      "label": "Eclipse Marketplace",
+      "url": "/eclipse-marketplace/dt/:name"
+    },
+    {
+      "label": "Gem",
+      "url": "/gem/dv/:gem/:version"
+    },
+    {
+      "label": "Gem",
+      "url": "/gem/dv/:gem/:version"
+    },
+    {
+      "label": "Gem",
+      "url": "/gem/dtv/:gem"
+    },
+    {
+      "label": "Gem",
+      "url": "/gem/dt/:gem"
+    },
+    {
+      "label": "Gem download rank",
+      "url": "/gem/rt/:gem"
+    },
+    {
+      "label": "Gem download rank (daily)",
+      "url": "/gem/rd/:gem"
+    },
+    {
+      "label": "GitHub All Releases",
+      "url": "/github/downloads/:user/:repo/total"
+    },
+    {
+      "label": "GitHub Releases",
+      "url": "/github/downloads/:user/:repo/:tag/total"
+    },
+    {
+      "label": "GitHub Pre-Releases",
+      "url": "/github/downloads-pre/:user/:repo/:tag/total"
+    },
+    {
+      "label": "GitHub Releases (by Release)",
+      "url": "/github/downloads/:user/:repo/:tag/total"
+    },
+    {
+      "label": "GitHub Releases (by Asset)",
+      "url": "/github/downloads/:user/:repo/:tag/:path"
+    },
+    {
+      "label": "GitHub Pre-Releases (by Asset)",
+      "url": "/github/downloads-pre/:user/:repo/:tag/:path"
+    },
+    {
+      "label": "Hex.pm",
+      "url": "/hexpm/dd/:packageName"
+    },
+    {
+      "label": "Hex.pm",
+      "url": "/hexpm/dw/:packageName"
+    },
+    {
+      "label": "Hex.pm",
+      "url": "/hexpm/dt/:packageName"
+    },
+    {
+      "label": "Jenkins Plugin installs",
+      "url": "/jenkins/plugin/i/:plugin"
+    },
+    {
+      "label": "Jenkins Plugin installs (version)",
+      "url": "/jenkins/plugin/i/:plugin/:version"
+    },
+    {
+      "label": "JetBrains IntelliJ plugins",
+      "url": "/jetbrains/plugin/d/:pluginId"
+    },
+    {
+      "label": "jsDelivr hits (GitHub)",
+      "url": "/jsdelivr/gh/:period/:user/:repo"
+    },
+    {
+      "label": "jsDelivr hits (npm)",
+      "url": "/jsdelivr/npm/:period/:packageName"
+    },
+    {
+      "label": "jsDelivr hits (npm scoped)",
+      "url": "/jsdelivr/npm/:period/:scope?/:packageName"
+    },
+    {
+      "label": "MyGet",
+      "url": "/myget/:feed/dt/:packageName"
+    },
+    {
+      "label": "MyGet tenant",
+      "url": "/:tenant.myget/:feed/dt/:packageName"
+    },
+    {
+      "label": "npm",
+      "url": "/npm/:interval/:scope?/:packageName"
+    },
+    {
+      "label": "Nuget",
+      "url": "/nuget/dt/:packageName"
+    },
+    {
+      "label": "Package Control",
+      "url": "/packagecontrol/dd/:packageName"
+    },
+    {
+      "label": "Package Control",
+      "url": "/packagecontrol/dw/:packageName"
+    },
+    {
+      "label": "Package Control",
+      "url": "/packagecontrol/dm/:packageName"
+    },
+    {
+      "label": "Package Control",
+      "url": "/packagecontrol/dt/:packageName"
+    },
+    {
+      "label": "Packagist Downloads",
+      "url": "/packagist/:interval/:user/:repo"
+    },
+    {
+      "label": "Packagist Downloads (custom server)",
+      "url": "/packagist/:interval/:user/:repo?server=https%3A%2F%2Fpackagist.org"
+    },
+    {
+      "label": "PowerShell Gallery",
+      "url": "/powershellgallery/dt/:packageName"
+    },
+    {
+      "label": "Puppet Forge downloads",
+      "url": "/puppetforge/dt/:user/:moduleName"
+    },
+    {
+      "label": "PyPI - Downloads",
+      "url": "/pypi/:period/:packageName"
+    },
+    {
+      "label": "JetBrains ReSharper plugins",
+      "url": "/resharper/dt/:packageName"
+    },
+    {
+      "label": "SourceForge",
+      "url": "/sourceforge/:interval/:project"
+    },
+    {
+      "label": "SourceForge",
+      "url": "/sourceforge/:interval/:project/:folder"
+    },
+    {
+      "label": "Spiget Downloads",
+      "url": "/spiget/downloads/:resourceId"
+    },
+    {
+      "label": "Steam Downloads",
+      "url": "/steam/downloads/:fileId"
+    },
+    {
+      "label": "Visual Studio Marketplace Installs - Azure DevOps Extension",
+      "url": "/visual-studio-marketplace/azure-devops/installs/:measure/:extensionId"
+    },
+    {
+      "label": "Visual Studio Marketplace Installs",
+      "url": "/visual-studio-marketplace/i/:extensionId"
+    },
+    {
+      "label": "Visual Studio Marketplace Downloads",
+      "url": "/visual-studio-marketplace/d/:extensionId"
+    },
+    {
+      "label": "WordPress Plugin Downloads",
+      "url": "/wordpress/plugin/:interval/:slug"
+    },
+    {
+      "label": "WordPress Theme Downloads",
+      "url": "/wordpress/theme/:interval/:slug"
+    },
+    {
+      "label": "WordPress Plugin Active Installs",
+      "url": "/wordpress/plugin/installs/:slug"
+    },
+    {
+      "label": "WordPress Theme Active Installs",
+      "url": "/wordpress/theme/installs/:slug"
+    }
+  ],
+  "funding": [
+    {
+      "label": "Beerpay",
+      "url": "/beerpay/:user/:project"
+    },
+    {
+      "label": "Bountysource",
+      "url": "/bountysource/team/:team/activity"
+    },
+    {
+      "label": "Chrome Web Store",
+      "url": "/chrome-web-store/price/:storeId"
+    },
+    {
+      "label": "Codetally",
+      "url": "/codetally/:owner/:repo"
+    },
+    {
+      "label": "Liberapay giving",
+      "url": "/liberapay/gives/:entity"
+    },
+    {
+      "label": "Liberapay goal progress",
+      "url": "/liberapay/goal/:entity"
+    },
+    {
+      "label": "Liberapay patrons",
+      "url": "/liberapay/patrons/:entity"
+    },
+    {
+      "label": "Liberapay receiving",
+      "url": "/liberapay/receives/:entity"
+    },
+    {
+      "label": "Open Collective backers and sponsors",
+      "url": "/opencollective/all/:collective"
+    },
+    {
+      "label": "Open Collective backers",
+      "url": "/opencollective/backers/:collective"
+    },
+    {
+      "label": "Open Collective members by tier",
+      "url": "/opencollective/tier/:collective/:tierId"
+    },
+    {
+      "label": "Open Collective sponsors",
+      "url": "/opencollective/sponsors/:collective"
+    }
+  ],
+  "issue-tracking": [
+    {
+      "label": "Bitbucket open issues",
+      "url": "/bitbucket/issues-raw/:user/:repo"
+    },
+    {
+      "label": "Bitbucket open issues",
+      "url": "/bitbucket/issues/:user/:repo"
+    },
+    {
+      "label": "Bitbucket open pull requests",
+      "url": "/bitbucket/pr-raw/:user/:repo"
+    },
+    {
+      "label": "Bitbucket Server open pull requests",
+      "url": "/bitbucket/pr-raw/:user/:repo?server=https%3A%2F%2Fbitbucket.mydomain.net"
+    },
+    {
+      "label": "Bitbucket open pull requests",
+      "url": "/bitbucket/pr/:user/:repo"
+    },
+    {
+      "label": "Bitbucket Server open pull requests",
+      "url": "/bitbucket/pr/:user/:repo?server=https%3A%2F%2Fbitbucket.mydomain.net"
+    },
+    {
+      "label": "Bugzilla bug status (Mozilla)",
+      "url": "/bugzilla/:bugNumber"
+    },
+    {
+      "label": "Bugzilla bug status (non-Mozilla)",
+      "url": "/bugzilla/:bugNumber?baseUrl=https%3A%2F%2Fbugs.eclipse.org%2Fbugs"
+    },
+    {
+      "label": "Gerrit change status",
+      "url": "/gerrit/:changeId?baseUrl=https%3A%2F%2Fandroid-review.googlesource.com"
+    },
+    {
+      "label": "GitHub commit merge status",
+      "url": "/github/commit-status/:user/:repo/:branch/:commit"
+    },
+    {
+      "label": "GitHub Hacktoberfest combined status",
+      "url": "/github/hacktoberfest/2019/:user/:repo"
+    },
+    {
+      "label": "GitHub Hacktoberfest combined status (suggestion label override)",
+      "url": "/github/hacktoberfest/2019/:user/:repo?suggestion_label=help%20wanted"
+    },
+    {
+      "label": "GitHub issue/pull request detail",
+      "url": "/github/:issueKind/detail/:property/:user/:repo/:number"
+    },
+    {
+      "label": "GitHub issues",
+      "url": "/github/issues/:user/:repo"
+    },
+    {
+      "label": "GitHub issues",
+      "url": "/github/issues-raw/:user/:repo"
+    },
+    {
+      "label": "GitHub issues by-label",
+      "url": "/github/issues/:user/:repo/:label"
+    },
+    {
+      "label": "GitHub issues by-label",
+      "url": "/github/issues-raw/:user/:repo/:label"
+    },
+    {
+      "label": "GitHub closed issues",
+      "url": "/github/issues-closed/:user/:repo"
+    },
+    {
+      "label": "GitHub closed issues",
+      "url": "/github/issues-closed-raw/:user/:repo"
+    },
+    {
+      "label": "GitHub pull requests",
+      "url": "/github/issues-pr/:user/:repo"
+    },
+    {
+      "label": "GitHub pull requests",
+      "url": "/github/issues-pr-raw/:user/:repo"
+    },
+    {
+      "label": "GitHub closed pull requests",
+      "url": "/github/issues-pr-closed/:user/:repo"
+    },
+    {
+      "label": "GitHub closed pull requests",
+      "url": "/github/issues-pr-closed-raw/:user/:repo"
+    },
+    {
+      "label": "GitHub pull requests by-label",
+      "url": "/github/issues-pr/:user/:repo/:label"
+    },
+    {
+      "label": "GitHub pull requests by-label",
+      "url": "/github/issues-pr-raw/:user/:repo/:label"
+    },
+    {
+      "label": "GitHub labels",
+      "url": "/github/labels/:user/:repo/:name"
+    },
+    {
+      "label": "GitHub milestone",
+      "url": "/github/milestones/:variant/:user/:repo/:number"
+    },
+    {
+      "label": "GitHub milestones",
+      "url": "/github/milestones/:variant/:user/:repo"
+    },
+    {
+      "label": "JIRA issue",
+      "url": "/jira/issue/:issueKey?baseUrl=https%3A%2F%2Fissues.apache.org%2Fjira"
+    },
+    {
+      "label": "JIRA sprint completion",
+      "url": "/jira/sprint/:sprintId?baseUrl=https%3A%2F%2Fjira.spring.io"
+    }
+  ],
+  "license": [
+    {
+      "label": "APM",
+      "url": "/apm/l/:packageName"
+    },
+    {
+      "label": "AUR license",
+      "url": "/aur/license/:packageName"
+    },
+    {
+      "label": "Bower",
+      "url": "/bower/l/:packageName"
+    },
+    {
+      "label": "Cocoapods",
+      "url": "/cocoapods/l/:spec"
+    },
+    {
+      "label": "Conda - License",
+      "url": "/conda/l/:channel/:package"
+    },
+    {
+      "label": "CPAN",
+      "url": "/cpan/l/:packageName"
+    },
+    {
+      "label": "CRAN/METACRAN",
+      "url": "/cran/l/:packageName"
+    },
+    {
+      "label": "Crates.io",
+      "url": "/crates/l/:crate"
+    },
+    {
+      "label": "Crates.io",
+      "url": "/crates/l/:crate/:version"
+    },
+    {
+      "label": "CTAN",
+      "url": "/ctan/l/:library"
+    },
+    {
+      "label": "DUB",
+      "url": "/dub/l/:packageName"
+    },
+    {
+      "label": "Eclipse Marketplace",
+      "url": "/eclipse-marketplace/l/:name"
+    },
+    {
+      "label": "GitHub",
+      "url": "/github/license/:user/:repo"
+    },
+    {
+      "label": "Hex.pm",
+      "url": "/hexpm/l/:packageName"
+    },
+    {
+      "label": "NPM",
+      "url": "/npm/l/:packageName"
+    },
+    {
+      "label": "NPM",
+      "url": "/npm/l/:packageName?registry_uri=https%3A%2F%2Fregistry.npmjs.com"
+    },
+    {
+      "label": "Packagist License",
+      "url": "/packagist/l/:user/:repo"
+    },
+    {
+      "label": "Packagist License (custom server)",
+      "url": "/packagist/l/:user/:repo?server=https%3A%2F%2Fpackagist.org"
+    },
+    {
+      "label": "PyPI - License",
+      "url": "/pypi/l/:packageName"
+    }
+  ],
+  "rating": [
+    {
+      "label": "Mozilla Add-on",
+      "url": "/amo/rating/:addonId"
+    },
+    {
+      "label": "Mozilla Add-on",
+      "url": "/amo/stars/:addonId"
+    },
+    {
+      "label": "AUR votes",
+      "url": "/aur/votes/:packageName"
+    },
+    {
+      "label": "Chrome Web Store",
+      "url": "/chrome-web-store/rating/:storeId"
+    },
+    {
+      "label": "Chrome Web Store",
+      "url": "/chrome-web-store/rating-count/:storeId"
+    },
+    {
+      "label": "Chrome Web Store",
+      "url": "/chrome-web-store/stars/:storeId"
+    },
+    {
+      "label": "Docker Stars",
+      "url": "/docker/stars/:user/:repo"
+    },
+    {
+      "label": "JetBrains IntelliJ Plugins",
+      "url": "/jetbrains/plugin/r/rating/:pluginId"
+    },
+    {
+      "label": "JetBrains IntelliJ Plugins",
+      "url": "/jetbrains/plugin/r/stars/:pluginId"
+    },
+    {
+      "label": "Libraries.io SourceRank",
+      "url": "/librariesio/sourcerank/:platform/:packageName"
+    },
+    {
+      "label": "Libraries.io SourceRank, scoped npm package",
+      "url": "/librariesio/sourcerank/:platform/:scope/:packageName"
+    },
+    {
+      "label": "Packagist Stars",
+      "url": "/packagist/stars/:user/:repo"
+    },
+    {
+      "label": "Packagist Stars (custom server)",
+      "url": "/packagist/stars/:user/:repo?server=https%3A%2F%2Fpackagist.org"
+    },
+    {
+      "label": "pkgreview.dev Package Ratings",
+      "url": "/pkgreview/rating/:pkgManager/:pkgSlug+"
+    },
+    {
+      "label": "pkgreview.dev Star Ratings",
+      "url": "/pkgreview/stars/:pkgManager/:pkgSlug+"
+    },
+    {
+      "label": "Puppet Forge endorsement",
+      "url": "/puppetforge/e/:user/:moduleName"
+    },
+    {
+      "label": "Puppet Forge feedback score",
+      "url": "/puppetforge/f/:user/:moduleName"
+    },
+    {
+      "label": "Plugin on redmine.org",
+      "url": "/redmine/plugin/rating/:plugin"
+    },
+    {
+      "label": "Plugin on redmine.org",
+      "url": "/redmine/plugin/stars/:plugin"
+    },
+    {
+      "label": "Spiget Stars",
+      "url": "/spiget/stars/:resourceId"
+    },
+    {
+      "label": "Spiget Rating",
+      "url": "/spiget/rating/:resourceId"
+    },
+    {
+      "label": "Steam Subscriptions",
+      "url": "/steam/subscriptions/:fileId"
+    },
+    {
+      "label": "Steam Favorites",
+      "url": "/steam/favorites/:fileId"
+    },
+    {
+      "label": "Vaadin Directory",
+      "url": "/vaadin-directory/rating-count/:packageName"
+    },
+    {
+      "label": "Vaadin Directory",
+      "url": "/vaadin-directory/:format/:packageName"
+    },
+    {
+      "label": "Visual Studio Marketplace Rating",
+      "url": "/visual-studio-marketplace/r/:extensionId"
+    },
+    {
+      "label": "Visual Studio Marketplace Rating (Stars)",
+      "url": "/visual-studio-marketplace/stars/:extensionId"
+    },
+    {
+      "label": "WordPress Plugin Rating",
+      "url": "/wordpress/plugin/rating/:slug"
+    },
+    {
+      "label": "WordPress Theme Rating",
+      "url": "/wordpress/theme/rating/:slug"
+    },
+    {
+      "label": "WordPress Plugin Rating",
+      "url": "/wordpress/plugin/stars/:slug"
+    },
+    {
+      "label": "WordPress Theme Rating",
+      "url": "/wordpress/theme/stars/:slug"
+    }
+  ],
+  "social": [
+    {
+      "label": "GitHub followers",
+      "url": "/github/followers/:user?label=Follow"
+    },
+    {
+      "label": "GitHub forks",
+      "url": "/github/forks/:user/:repo?label=Fork"
+    },
+    {
+      "label": "GitHub stars",
+      "url": "/github/stars/:user/:repo?style=social"
+    },
+    {
+      "label": "GitHub watchers",
+      "url": "/github/watchers/:user/:repo?label=Watch"
+    },
+    {
+      "label": "Keybase BTC",
+      "url": "/keybase/btc/:username"
+    },
+    {
+      "label": "Keybase PGP",
+      "url": "/keybase/pgp/:username"
+    },
+    {
+      "label": "Keybase XLM",
+      "url": "/keybase/xlm/:username"
+    },
+    {
+      "label": "Keybase ZEC",
+      "url": "/keybase/zec/:username"
+    },
+    {
+      "label": "Mastodon Follow",
+      "url": "/mastodon/follow/:id?domain=https%3A%2F%2Fmastodon.social"
+    },
+    {
+      "label": "Subreddit subscribers",
+      "url": "/reddit/subreddit-subscribers/:subreddit"
+    },
+    {
+      "label": "Twitter URL",
+      "url": "/twitter/url?url=https%3A%2F%2Fshields.io"
+    },
+    {
+      "label": "Twitter Follow",
+      "url": "/twitter/follow/:user?label=Follow"
+    }
+  ],
+  "version": [
+    {
+      "label": "Mozilla Add-on",
+      "url": "/amo/v/:addonId"
+    },
+    {
+      "label": "APM",
+      "url": "/apm/v/:packageName"
+    },
+    {
+      "label": "Arch Linux package",
+      "url": "/archlinux/v/:repository/:architecture/:packageName"
+    },
+    {
+      "label": "AUR version",
+      "url": "/aur/version/:packageName"
+    },
+    {
+      "label": "Bintray",
+      "url": "/bintray/v/:subject/:repo/:packageName"
+    },
+    {
+      "label": "Bower Version",
+      "url": "/bower/v/:packageName"
+    },
+    {
+      "label": "Bower Version (including pre-releases)",
+      "url": "/bower/v/:packageName?include_prereleases"
+    },
+    {
+      "label": "Cdnjs",
+      "url": "/cdnjs/v/:library"
+    },
+    {
+      "label": "Chocolatey Version",
+      "url": "/chocolatey/v/:packageName"
+    },
+    {
+      "label": "Chocolatey Version (including pre-releases)",
+      "url": "/chocolatey/v/:packageName?include_prereleases"
+    },
+    {
+      "label": "Chrome Web Store",
+      "url": "/chrome-web-store/v/:storeId"
+    },
+    {
+      "label": "Clojars Version",
+      "url": "/clojars/v/:clojar+"
+    },
+    {
+      "label": "Clojars Version (including pre-releases)",
+      "url": "/clojars/v/:clojar+?include_prereleases"
+    },
+    {
+      "label": "Cocoapods",
+      "url": "/cocoapods/v/:spec"
+    },
+    {
+      "label": "Conda",
+      "url": "/conda/v/:channel/:package"
+    },
+    {
+      "label": "Conda (channel only)",
+      "url": "/conda/vn/:channel/:package"
+    },
+    {
+      "label": "Chef cookbook",
+      "url": "/cookbook/v/:cookbook"
+    },
+    {
+      "label": "CPAN",
+      "url": "/cpan/v/:packageName"
+    },
+    {
+      "label": "CRAN/METACRAN",
+      "url": "/cran/v/:packageName"
+    },
+    {
+      "label": "Crates.io",
+      "url": "/crates/v/:crate"
+    },
+    {
+      "label": "CTAN",
+      "url": "/ctan/v/:library"
+    },
+    {
+      "label": "Debian package",
+      "url": "/debian/v/:packageName/:distribution?"
+    },
+    {
+      "label": "Docker Image Version (latest by date)",
+      "url": "/docker/v/:user/:repo?sort=date"
+    },
+    {
+      "label": "Docker Image Version (latest semver)",
+      "url": "/docker/v/:user/:repo?sort=semver"
+    },
+    {
+      "label": "Docker Image Version (tag latest semver)",
+      "url": "/docker/v/:user/:repo/:tag"
+    },
+    {
+      "label": "DUB",
+      "url": "/dub/v/:packageName"
+    },
+    {
+      "label": "Eclipse Marketplace",
+      "url": "/eclipse-marketplace/v/:name"
+    },
+    {
+      "label": "Elm package",
+      "url": "/elm-package/v/:user/:packageName"
+    },
+    {
+      "label": "F-Droid",
+      "url": "/f-droid/v/:appId"
+    },
+    {
+      "label": "F-Droid (explicit metadata format)",
+      "url": "/f-droid/v/:appId?metadata_format=yml"
+    },
+    {
+      "label": "Fedora package",
+      "url": "/fedora/v/:packageName/:branch?"
+    },
+    {
+      "label": "Gem",
+      "url": "/gem/v/:gem"
+    },
+    {
+      "label": "GitHub go.mod Go version",
+      "url": "/github/go-mod/go-version/:user/:repo"
+    },
+    {
+      "label": "GitHub go.mod Go version (branch)",
+      "url": "/github/go-mod/go-version/:user/:repo/:branch"
+    },
+    {
+      "label": "GitHub go.mod Go version (subfolder of monorepo)",
+      "url": "/github/go-mod/go-version/:user/:repo?filename=src%2Fgo.mod"
+    },
+    {
+      "label": "GitHub go.mod Go version (branch & subfolder of monorepo)",
+      "url": "/github/go-mod/go-version/:user/:repo/:branch?filename=src%2Fgo.mod"
+    },
+    {
+      "label": "Github lerna version",
+      "url": "/github/lerna-json/v/:user/:repo"
+    },
+    {
+      "label": "Github lerna version (branch)",
+      "url": "/github/lerna-json/v/:user/:repo/:branch"
+    },
+    {
+      "label": "GitHub manifest version",
+      "url": "/github/manifest-json/v/:user/:repo"
+    },
+    {
+      "label": "GitHub manifest version",
+      "url": "/github/manifest-json/v/:user/:repo/:branch"
+    },
+    {
+      "label": "GitHub package.json version",
+      "url": "/github/package-json/v/:user/:repo"
+    },
+    {
+      "label": "GitHub package.json version (branch)",
+      "url": "/github/package-json/v/:user/:repo/:branch"
+    },
+    {
+      "label": "GitHub release (latest by date)",
+      "url": "/github/v/release/:user/:repo"
+    },
+    {
+      "label": "GitHub release (latest by date including pre-releases)",
+      "url": "/github/v/release/:user/:repo?include_prereleases"
+    },
+    {
+      "label": "GitHub release (latest SemVer)",
+      "url": "/github/v/release/:user/:repo?sort=semver"
+    },
+    {
+      "label": "GitHub release (latest SemVer including pre-releases)",
+      "url": "/github/v/release/:user/:repo?include_prereleases&sort=semver"
+    },
+    {
+      "label": "GitHub tag (latest by date)",
+      "url": "/github/v/tag/:user/:repo"
+    },
+    {
+      "label": "GitHub tag (latest SemVer)",
+      "url": "/github/v/tag/:user/:repo?sort=semver"
+    },
+    {
+      "label": "GitHub tag (latest SemVer pre-release)",
+      "url": "/github/v/tag/:user/:repo?include_prereleases&sort=semver"
+    },
+    {
+      "label": "Hackage",
+      "url": "/hackage/v/:packageName"
+    },
+    {
+      "label": "Hex.pm",
+      "url": "/hexpm/v/:packageName"
+    },
+    {
+      "label": "homebrew cask",
+      "url": "/homebrew/cask/v/:cask"
+    },
+    {
+      "label": "homebrew",
+      "url": "/homebrew/v/:formula"
+    },
+    {
+      "label": "iTunes App Store",
+      "url": "/itunes/v/:bundleId"
+    },
+    {
+      "label": "Jenkins Plugins",
+      "url": "/jenkins/plugin/v/:plugin"
+    },
+    {
+      "label": "JetBrains IntelliJ Plugins",
+      "url": "/jetbrains/plugin/v/:pluginId"
+    },
+    {
+      "label": "JitPack",
+      "url": "/jitpack/v/:vcs/:user/:repo"
+    },
+    {
+      "label": "LuaRocks",
+      "url": "/luarocks/v/:user/:moduleName/:version?"
+    },
+    {
+      "label": "Maven Central",
+      "url": "/maven-central/v/:groupId/:artifactId"
+    },
+    {
+      "label": "Maven Central with version prefix filter",
+      "url": "/maven-central/v/:groupId/:artifactId/:versionPrefix"
+    },
+    {
+      "label": "Maven metadata URL",
+      "url": "/maven-metadata/v?metadataUrl=https%3A%2F%2Frepo1.maven.org%2Fmaven2%2Fcom%2Fgoogle%2Fcode%2Fgson%2Fgson%2Fmaven-metadata.xml"
+    },
+    {
+      "label": "MyGet",
+      "url": "/myget/:feed/v/:packageName"
+    },
+    {
+      "label": "MyGet (with prereleases)",
+      "url": "/myget/:feed/vpre/:packageName"
+    },
+    {
+      "label": "MyGet tenant",
+      "url": "/:tenant.myget/:feed/v/:packageName"
+    },
+    {
+      "label": "Sonatype Nexus (Releases)",
+      "url": "/nexus/r/:groupId/:artifactId?nexusVersion=3&server=https%3A%2F%2Fnexus.pentaho.org"
+    },
+    {
+      "label": "Sonatype Nexus (Snapshots)",
+      "url": "/nexus/s/:groupId/:artifactId?server=https%3A%2F%2Foss.sonatype.org"
+    },
+    {
+      "label": "Sonatype Nexus (Repository)",
+      "url": "/nexus/:repo/:groupId/:artifactId?server=https%3A%2F%2Frepository.jboss.org%2Fnexus"
+    },
+    {
+      "label": "Sonatype Nexus (Query Options)",
+      "url": "/nexus/:repo/:groupId/:artifactId?queryOpt=%3Ac%3Dagent-apple-osx%3Ap%3Dtar.gz&server=https%3A%2F%2Frepository.jboss.org%2Fnexus"
+    },
+    {
+      "label": "npm",
+      "url": "/npm/v/:packageName"
+    },
+    {
+      "label": "npm (scoped)",
+      "url": "/npm/v/:scope/:packageName"
+    },
+    {
+      "label": "npm (tag)",
+      "url": "/npm/v/:packageName/:tag"
+    },
+    {
+      "label": "npm (custom registry)",
+      "url": "/npm/v/:packageName/:tag?registry_uri=https%3A%2F%2Fregistry.npmjs.com"
+    },
+    {
+      "label": "npm (scoped with tag)",
+      "url": "/npm/v/:scope/:packageName/:tag"
+    },
+    {
+      "label": "Nuget",
+      "url": "/nuget/v/:packageName"
+    },
+    {
+      "label": "Nuget (with prereleases)",
+      "url": "/nuget/vpre/:packageName"
+    },
+    {
+      "label": "OPM",
+      "url": "/opm/v/:user/:moduleName"
+    },
+    {
+      "label": "Packagist Version",
+      "url": "/packagist/v/:user/:repo"
+    },
+    {
+      "label": "Packagist Version (including pre-releases)",
+      "url": "/packagist/v/:user/:repo?include_prereleases"
+    },
+    {
+      "label": "Packagist Version (custom server)",
+      "url": "/packagist/v/:user/:repo?server=https%3A%2F%2Fpackagist.org"
+    },
+    {
+      "label": "PowerShell Gallery Version",
+      "url": "/powershellgallery/v/:packageName"
+    },
+    {
+      "label": "PowerShell Gallery Version (including pre-releases)",
+      "url": "/powershellgallery/v/:packageName?include_prereleases"
+    },
+    {
+      "label": "Pub Version",
+      "url": "/pub/v/:packageName"
+    },
+    {
+      "label": "Pub Version (including pre-releases)",
+      "url": "/pub/v/:packageName?include_prereleases"
+    },
+    {
+      "label": "Puppet Forge version",
+      "url": "/puppetforge/v/:user/:moduleName"
+    },
+    {
+      "label": "PyPI",
+      "url": "/pypi/v/:packageName"
+    },
+    {
+      "label": "JetBrains ReSharper plugins Version",
+      "url": "/resharper/v/:packageName"
+    },
+    {
+      "label": "JetBrains ReSharper plugins Version (including pre-releases)",
+      "url": "/resharper/v/:packageName?include_prereleases"
+    },
+    {
+      "label": "Spack",
+      "url": "/spack/v/:packageName"
+    },
+    {
+      "label": "Spiget Version",
+      "url": "/spiget/version/:resourceId"
+    },
+    {
+      "label": "Ubuntu package",
+      "url": "/ubuntu/v/:packageName/:series?"
+    },
+    {
+      "label": "Vaadin Directory",
+      "url": "/vaadin-directory/v/:packageName"
+    },
+    {
+      "label": "Visual Studio App Center (Minimum) OS Version",
+      "url": "/visual-studio-app-center/releases/osver/:owner/:app/:token"
+    },
+    {
+      "label": "Visual Studio App Center Releases",
+      "url": "/visual-studio-app-center/releases/version/:owner/:app/:token"
+    },
+    {
+      "label": "Visual Studio Marketplace Version",
+      "url": "/visual-studio-marketplace/v/:extensionId"
+    },
+    {
+      "label": "WordPress Theme Version",
+      "url": "/wordpress/theme/v/:slug"
+    },
+    {
+      "label": "WordPress Plugin Version",
+      "url": "/wordpress/plugin/v/:slug"
+    }
+  ],
+  "platform-support": [
+    {
+      "label": "Cocoapods platforms",
+      "url": "/cocoapods/p/:spec"
+    },
+    {
+      "label": "Conda",
+      "url": "/conda/pn/:channel/:package"
+    },
+    {
+      "label": "GitHub package.json dependency version (prod)",
+      "url": "/github/package-json/dependency-version/:user/:repo/:packageName"
+    },
+    {
+      "label": "GitHub package.json dependency version (dev dep on branch)",
+      "url": "/github/package-json/dependency-version/:user/:repo/dev/:scope?/:packageName/:branch*"
+    },
+    {
+      "label": "GitHub package.json dependency version (subfolder of monorepo)",
+      "url": "/github/package-json/dependency-version/:user/:repo/:packageName?filename=packages%2Fchar-width-table-builder%2Fpackage.json"
+    },
+    {
+      "label": "GitHub Pipenv locked Python version",
+      "url": "/github/pipenv/locked/python-version/:user/:repo"
+    },
+    {
+      "label": "GitHub Pipenv locked Python version (branch)",
+      "url": "/github/pipenv/locked/python-version/:user/:repo/:branch"
+    },
+    {
+      "label": "node-current",
+      "url": "/node/v/:packageName"
+    },
+    {
+      "label": "node-current (scoped)",
+      "url": "/node/v/@:scope/:packageName"
+    },
+    {
+      "label": "node-current (tag)",
+      "url": "/node/v/:packageName/:tag"
+    },
+    {
+      "label": "node-current (scoped with tag)",
+      "url": "/node/v/@:scope/:packageName/:tag"
+    },
+    {
+      "label": "node-current (scoped with tag, custom registry)",
+      "url": "/node/v/@:scope/:packageName/:tag?registry_uri=https%3A%2F%2Fregistry.npmjs.com"
+    },
+    {
+      "label": "node-lts",
+      "url": "/node/v-lts/:packageName"
+    },
+    {
+      "label": "node-lts (scoped)",
+      "url": "/node/v-lts/@:scope/:packageName"
+    },
+    {
+      "label": "node-lts (tag)",
+      "url": "/node/v-lts/:packageName/:tag"
+    },
+    {
+      "label": "node-lts (scoped with tag)",
+      "url": "/node/v-lts/@:scope/:packageName/:tag"
+    },
+    {
+      "label": "node-lts (scoped with tag, custom registry)",
+      "url": "/node/v-lts/@:scope/:packageName/:tag?registry_uri=https%3A%2F%2Fregistry.npmjs.com"
+    },
+    {
+      "label": "npm peer dependency version",
+      "url": "/npm/dependency-version/:packageName/peer/:dependency"
+    },
+    {
+      "label": "npm peer dependency version (scoped)",
+      "url": "/npm/dependency-version/:scope?/:packageName/dev/:dependencyScope?/:dependency"
+    },
+    {
+      "label": "npm dev dependency version",
+      "url": "/npm/dependency-version/:packageName/dev/:dependency"
+    },
+    {
+      "label": "npm dev dependency version (scoped)",
+      "url": "/npm/dependency-version/:scope?/:packageName/dev/:dependencyScope?/:dependency"
+    },
+    {
+      "label": "npm (prod) dependency version",
+      "url": "/npm/dependency-version/:packageName/:dependency"
+    },
+    {
+      "label": "npm (prod) dependency version (scoped)",
+      "url": "/npm/dependency-version/:scope?/:packageName/:dependencyScope?/:dependency"
+    },
+    {
+      "label": "npm type definitions",
+      "url": "/npm/types/:packageName"
+    },
+    {
+      "label": "Packagist PHP Version Support",
+      "url": "/packagist/php-v/:user/:repo"
+    },
+    {
+      "label": "Packagist PHP Version Support (specify version)",
+      "url": "/packagist/php-v/:user/:repo/:version"
+    },
+    {
+      "label": "Packagist PHP Version Support (custom server)",
+      "url": "/packagist/php-v/:user/:repo?server=https%3A%2F%2Fpackagist.org"
+    },
+    {
+      "label": "PowerShell Gallery",
+      "url": "/powershellgallery/p/:packageName"
+    },
+    {
+      "label": "Puppet Forge – PDK version",
+      "url": "/puppetforge/pdk-version/:user/:moduleName"
+    },
+    {
+      "label": "PyPI - Django Version",
+      "url": "/pypi/djversions/:packageName"
+    },
+    {
+      "label": "PyPI - Implementation",
+      "url": "/pypi/implementation/:packageName"
+    },
+    {
+      "label": "PyPI - Python Version",
+      "url": "/pypi/pyversions/:packageName"
+    },
+    {
+      "label": "PyPI - Wheel",
+      "url": "/pypi/wheel/:packageName"
+    },
+    {
+      "label": "Repology - Repositories",
+      "url": "/repology/repositories/:projectName"
+    },
+    {
+      "label": "Spiget tested server versions",
+      "url": "/spiget/tested-versions/:resourceId"
+    },
+    {
+      "label": "PHP from Travis config",
+      "url": "/travis/php-v/:user/:repo/:branch*"
+    },
+    {
+      "label": "WordPress Plugin: Required WP Version",
+      "url": "/wordpress/plugin/wp-version/:slug"
+    },
+    {
+      "label": "WordPress Plugin: Tested WP Version",
+      "url": "/wordpress/plugin/tested/:slug"
+    }
+  ],
+  "monitoring": [
+    {
+      "label": "Chromium HSTS preload",
+      "url": "/hsts/preload/:domain"
+    },
+    {
+      "label": "Mozilla HTTP Observatory Grade",
+      "url": "/mozilla-observatory/:format/:host?publish"
+    },
+    {
+      "label": "NodePing status",
+      "url": "/nodeping/status/:checkUuid?down_color=lightgrey&down_message=offline&up_color=blue&up_message=online"
+    },
+    {
+      "label": "NodePing uptime",
+      "url": "/nodeping/uptime/:checkUuid"
+    },
+    {
+      "label": "Security Headers",
+      "url": "/security-headers?url=https%3A%2F%2Fshields.io"
+    },
+    {
+      "label": "Uptime Robot ratio (30 days)",
+      "url": "/uptimerobot/ratio/:monitorSpecificKey"
+    },
+    {
+      "label": "Uptime Robot ratio (7 days)",
+      "url": "/uptimerobot/ratio/7/:monitorSpecificKey"
+    },
+    {
+      "label": "Uptime Robot status",
+      "url": "/uptimerobot/status/:monitorSpecificKey"
+    },
+    {
+      "label": "Website",
+      "url": "/website?down_color=lightgrey&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Fshields.io"
+    }
+  ],
+  "activity": [
+    {
+      "label": "AUR last modified",
+      "url": "/aur/last-modified/:packageName"
+    },
+    {
+      "label": "Eclipse Marketplace",
+      "url": "/eclipse-marketplace/last-update/:name"
+    },
+    {
+      "label": "GitHub commit activity",
+      "url": "/github/commit-activity/:interval/:user/:repo"
+    },
+    {
+      "label": "GitHub commits since tagged version",
+      "url": "/github/commits-since/:user/:repo/:version/:branch*"
+    },
+    {
+      "label": "GitHub commits since tagged version (branch)",
+      "url": "/github/commits-since/:user/:repo/:version/:branch*"
+    },
+    {
+      "label": "GitHub commits since latest release (by date)",
+      "url": "/github/commits-since/:user/:repo/:version/:branch*"
+    },
+    {
+      "label": "GitHub commits since latest release (by date) for a branch",
+      "url": "/github/commits-since/:user/:repo/:version/:branch*"
+    },
+    {
+      "label": "GitHub commits since latest release (by date including pre-releases)",
+      "url": "/github/commits-since/:user/:repo/:version/:branch*?include_prereleases"
+    },
+    {
+      "label": "GitHub commits since latest release (by SemVer)",
+      "url": "/github/commits-since/:user/:repo/:version/:branch*?sort=semver"
+    },
+    {
+      "label": "GitHub commits since latest release (by SemVer including pre-releases)",
+      "url": "/github/commits-since/:user/:repo/:version/:branch*?include_prereleases&sort=semver"
+    },
+    {
+      "label": "GitHub contributors",
+      "url": "/github/:variant/:user/:repo"
+    },
+    {
+      "label": "GitHub last commit",
+      "url": "/github/last-commit/:user/:repo"
+    },
+    {
+      "label": "GitHub last commit (branch)",
+      "url": "/github/last-commit/:user/:repo/:branch"
+    },
+    {
+      "label": "GitHub Release Date",
+      "url": "/github/release-date/:user/:repo"
+    },
+    {
+      "label": "GitHub (Pre-)Release Date",
+      "url": "/github/release-date-pre/:user/:repo"
+    },
+    {
+      "label": "npm collaborators",
+      "url": "/npm/collaborators/:packageName"
+    },
+    {
+      "label": "npm collaborators",
+      "url": "/npm/collaborators/:packageName?registry_uri=https%3A%2F%2Fregistry.npmjs.com"
+    },
+    {
+      "label": "Steam Release Date",
+      "url": "/steam/release-date/:fileId"
+    },
+    {
+      "label": "Twitch Status",
+      "url": "/twitch/status/:user"
+    },
+    {
+      "label": "Vaadin Directory",
+      "url": "/vaadin-directory/release-date/:packageName"
+    }
+  ],
+  "other": [
+    {
+      "label": "Ansible Role",
+      "url": "/ansible/role/:roleId"
+    },
+    {
+      "label": "AUR maintainer",
+      "url": "/aur/maintainer/:packageName"
+    },
+    {
+      "label": "bit",
+      "url": "/bit/collection/total-components/:owner/:collection"
+    },
+    {
+      "label": "bStats Players",
+      "url": "/bstats/players/:pluginid"
+    },
+    {
+      "label": "bStats Servers",
+      "url": "/bstats/servers/:pluginid"
+    },
+    {
+      "label": "Relative date",
+      "url": "/date/:timestamp"
+    },
+    {
+      "label": "Eclipse Marketplace",
+      "url": "/eclipse-marketplace/favorites/:name"
+    },
+    {
+      "label": "Gems",
+      "url": "/gem/u/:user"
+    },
+    {
+      "label": "GitHub deployments",
+      "url": "/github/deployments/:user/:repo/:environment"
+    },
+    {
+      "label": "GitHub manifest.json dynamic",
+      "url": "/github/manifest-json/:key/:user/:repo"
+    },
+    {
+      "label": "GitHub manifest.json dynamic",
+      "url": "/github/manifest-json/:key/:user/:repo/:branch"
+    },
+    {
+      "label": "GitHub package.json dynamic",
+      "url": "/github/package-json/:key/:user/:repo"
+    },
+    {
+      "label": "GitHub package.json dynamic",
+      "url": "/github/package-json/:key/:user/:repo/:branch"
+    },
+    {
+      "label": "Dependent repos (via libraries.io)",
+      "url": "/librariesio/dependent-repos/:platform/:packageName"
+    },
+    {
+      "label": "Dependent repos (via libraries.io), scoped npm package",
+      "url": "/librariesio/dependent-repos/:platform/:scope/:packageName"
+    },
+    {
+      "label": "Dependents (via libraries.io)",
+      "url": "/librariesio/dependents/:platform/:packageName"
+    },
+    {
+      "label": "Dependents (via libraries.io), scoped npm package",
+      "url": "/librariesio/dependents/:platform/:scope/:packageName"
+    },
+    {
+      "label": "Maintenance",
+      "url": "/maintenance/:maintained/:year"
+    },
+    {
+      "label": "Offset Earth (Carbon Offset)",
+      "url": "/offset-earth/carbon/:username"
+    },
+    {
+      "label": "Offset Earth (Trees)",
+      "url": "/offset-earth/trees/:username"
+    },
+    {
+      "label": "OSS Lifecycle",
+      "url": "/osslifecycle/:user/:repo"
+    },
+    {
+      "label": "OSS Lifecycle (branch)",
+      "url": "/osslifecycle/:user/:repo/:branch"
+    },
+    {
+      "label": "POEditor",
+      "url": "/poeditor/progress/:projectId/:languageCode?token=abc123def456"
+    },
+    {
+      "label": "Puppet Forge modules by user",
+      "url": "/puppetforge/mc/:user"
+    },
+    {
+      "label": "Puppet Forge releases by user",
+      "url": "/puppetforge/rc/:user"
+    },
+    {
+      "label": "PyPI - Format",
+      "url": "/pypi/format/:packageName"
+    },
+    {
+      "label": "PyPI - Status",
+      "url": "/pypi/status/:packageName"
+    },
+    {
+      "label": "Sourceforge Open Tickets",
+      "url": "/sourceforge/open-tickets/:project/:type"
+    },
+    {
+      "label": "Sourcegraph for Repo Reference Count",
+      "url": "/sourcegraph/rrc/:repo"
+    },
+    {
+      "label": "Steam Collection Files",
+      "url": "/steam/collection-files/:collectionId"
+    },
+    {
+      "label": "Steam Views",
+      "url": "/steam/views/:fileId"
+    },
+    {
+      "label": "Swagger Validator",
+      "url": "/swagger/valid/3.0?specUrl=https%3A%2F%2Fraw.githubusercontent.com%2FOAI%2FOpenAPI-Specification%2Fmaster%2Fexamples%2Fv2.0%2Fjson%2Fpetstore-expanded.json"
+    },
+    {
+      "label": "Treeware (Trees)",
+      "url": "/treeware/trees/:owner/:packageName"
+    },
+    {
+      "label": "Vaadin Directory",
+      "url": "/vaadin-directory/status/:packageName"
+    },
+    {
+      "label": "Wheelmap",
+      "url": "/wheelmap/a/:nodeId"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+// This file was auto-generated. Do not modify it by hand and instead modify the scraper or code generator files.
+
+export * as mozillaAddOn from './mozillaAddOn';
+export * as mozillaAddOn2 from './mozillaAddOn2';
+export * as aurVotes from './aurVotes';
+export * as chromeWebStore from './chromeWebStore';
+export * as chromeWebStore2 from './chromeWebStore2';
+export * as chromeWebStore3 from './chromeWebStore3';
+export * as dockerStars from './dockerStars';
+export * as jetbrainsIntellijPlugins from './jetbrainsIntellijPlugins';
+export * as jetbrainsIntellijPlugins2 from './jetbrainsIntellijPlugins2';
+export * as librariesIoSourcerank from './librariesIoSourcerank';
+export * as librariesIoSourcerankScopedNpmPackage from './librariesIoSourcerankScopedNpmPackage';
+export * as packagistStars from './packagistStars';
+export * as packagistStarsCustomServer from './packagistStarsCustomServer';
+export * as pkgreviewDevPackageRatings from './pkgreviewDevPackageRatings';
+export * as pkgreviewDevStarRatings from './pkgreviewDevStarRatings';
+export * as puppetForgeEndorsement from './puppetForgeEndorsement';
+export * as puppetForgeFeedbackScore from './puppetForgeFeedbackScore';
+export * as pluginOnRedmineOrg from './pluginOnRedmineOrg';
+export * as pluginOnRedmineOrg2 from './pluginOnRedmineOrg2';
+export * as spigetStars from './spigetStars';
+export * as spigetRating from './spigetRating';
+export * as steamSubscriptions from './steamSubscriptions';
+export * as steamFavorites from './steamFavorites';
+export * as vaadinDirectory from './vaadinDirectory';
+export * as vaadinDirectory2 from './vaadinDirectory2';
+export * as visualStudioMarketplaceRating from './visualStudioMarketplaceRating';
+export * as visualStudioMarketplaceRatingStars from './visualStudioMarketplaceRatingStars';
+export * as wordpressPluginRating from './wordpressPluginRating';
+export * as wordpressThemeRating from './wordpressThemeRating';
+export * as wordpressPluginRating2 from './wordpressPluginRating2';
+export * as wordpressThemeRating2 from './wordpressThemeRating2';
