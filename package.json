@@ -1,7 +1,7 @@
 {
   "name": "badge-urls",
   "description": "Helper functions to generate URLs for all badges / shields from shields.io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": {
     "email": "npm@gfm.io",
